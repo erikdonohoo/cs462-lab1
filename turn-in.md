@@ -14,3 +14,12 @@
 Initially, since the extension wasn't mapped to a mime type, it was returned as application/octet-stream, which triggered chrome to just try and download the file.  After adding `.byu` as a text/html type, the browser rendered it like a normal html page.
 
 ## Part 2
+
+Mappings
+```javascript
+var redirectMap = {
+	goog: 'http://google.com',
+	face: 'http://facebook.com',
+	yahoo: 'http://yahoo.com'
+};
+```
