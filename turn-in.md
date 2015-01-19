@@ -23,3 +23,9 @@ var redirectMap = {
 	yahoo: 'http://yahoo.com'
 };
 ```
+
+1. Mirror request headers, query params, and body
+54.175.229.50/mirror.cgi (POST or GET)
+
+2. Redirect using `redirectMap` above
+54.175.229.50/redirect.cgi?<param>
