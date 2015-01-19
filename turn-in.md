@@ -29,3 +29,9 @@ var redirectMap = {
 
 2. Redirect using `redirectMap` above
 54.175.229.50/redirect.cgi?<param>
+
+# Part 3
+54.175.229.50/version.cgi
+
+curl
+``
