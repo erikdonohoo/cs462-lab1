@@ -34,4 +34,5 @@ var redirectMap = {
 54.175.229.50/version.cgi
 
 curl
-``
+`curl -H "Accept: application/vnd.byu.cs462.v1+json" "http://54.175.229.50/version.cgi"`
+`curl -H "Accept: application/vnd.byu.cs462.v2+json" "http://54.175.229.50/version.cgi"`
