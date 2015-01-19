@@ -4,15 +4,15 @@ var versionregex = /\.(v[0-9]*)\+json$/;
 
 function version (app) {
 	return function (req, res) {
-		if (!req.headers.Accept) {
+		if (!req.headers.accept) {
 			res.send(400, {status: 400, message: 'Must send Accept Header'});
 			return;
 		}
 
 		var match;
-		if (match = versionregex.exec(req.headers.Accept)) {
+		if (match = versionregex.exec(req.headers.accept)) {
 			res.json({
-				version: match[0]
+				version: match[1]
 			});
 		} else {
 			res.send(400, {status: 400, message: 'Must send Accept Header with version'});
