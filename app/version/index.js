@@ -11,6 +11,7 @@ function version (app) {
 
 		var match;
 		if (match = versionregex.exec(req.headers.accept)) {
+			res.setHeader('Content-Type', 'application/json');
 			res.json({
 				version: match[1]
 			});
