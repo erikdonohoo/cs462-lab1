@@ -24,14 +24,14 @@ var redirectMap = {
 };
 ```
 
-1. Mirror request headers, query params, and body
-54.175.229.50/mirror.cgi (POST or GET)
+1. Mirror request headers, query params, and body  
+http://54.175.229.50/mirror.cgi (POST or GET)
 
-2. Redirect using `redirectMap` above
-54.175.229.50/redirect.cgi?<param>
+2. Redirect using `redirectMap` above  
+http://54.175.229.50/redirect.cgi?<param>
 
 # Part 3
-54.175.229.50/version.cgi
+http://54.175.229.50/version.cgi
 
 curl
 `curl -H "Accept: application/vnd.byu.cs462.v1+json" "http://54.175.229.50/version.cgi"`
