@@ -28,7 +28,7 @@ var redirectMap = {
 http://54.175.229.50/mirror.cgi (POST or GET)
 
 2. Redirect using `redirectMap` above  
-http://54.175.229.50/redirect.cgi?(goog or face or yahoo)
+http://54.175.229.50/redirect.cgi? (goog or face or yahoo)
 
 # Part 3
 http://54.175.229.50/version.cgi
