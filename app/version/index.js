@@ -12,7 +12,7 @@ function version (app) {
 		var match;
 		if (match = versionregex.exec(req.headers.accept)) {
 			res.setHeader('Content-Type', 'application/json');
-			res.json({
+			res.send({
 				version: match[1]
 			});
 		} else {
